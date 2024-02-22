@@ -78,7 +78,7 @@
 		<div id="bmi-result"></div>
 		<br><br>
 
-		<script src="https://dice-roller-api.azurewebsites.net/index.js"></script>
+		<script src="https://dice-roller-api.azurewebsites.net/2plus2"></script>
 		
 		<script>
 			let fetchAboutCounter = 0
@@ -94,7 +94,7 @@
 			async function fetch2Plus2() {
 				fetch2plus2Counter++
 				const url = document.getElementById("urlInput").value + "/2plus2";
-				const response = await fetch(https://dice-roller-api.azurewebsites.net/2plus2)
+				const response = await fetch("https://dice-roller-api.azurewebsites.net/2plus2")
 				const responseText = await response.text()
 				document.getElementById("fetch-2plus2-result").innerHTML = responseText + " ("+fetch2plus2Counter+")"
 			}
